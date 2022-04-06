@@ -20,7 +20,7 @@ export default function TitlePokemon(props) {
     }
 
     return (
-        <TouchableOpacity style={styles.container} onPress={() => navigation.navigate("PokemonDetail")}>
+        <TouchableOpacity style={styles.container} onPress={() => navigation.navigate("PokemonDetail", {pokemonDatas: pokemonDatas})}>
             <View style={styles.shadowProp}>
                     {
                     pokemonImg ?
